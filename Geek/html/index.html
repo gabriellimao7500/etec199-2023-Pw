@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../JavaScript/app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <div class="max-header"></div>
+        <header>
+            <div class="un-activated">
+                <button class="hamburguer"></button>
+                <main class="hamburguer-out">
+                    <section>
+                        <button onclick="turn_theme()" class="theme-alternateS"></button>
+                    </section>
+                    <section class="section-itens">
+                        <button onclick="clickRoupa()" class="roupas-selector" href="">roupas<div id="itensR" class="itensR-out"></div></button>
+                        <div class="roupas-out">
+                            <a href="">Camisetas</a>
+                            <a href="">Blusas</a>
+                            <a href="">Valsas</a>
+                            <a href="">Tenis</a>
+                        </div>
+                    </section>
+                    <section class="section-itens">
+                        <button onclick="clickManga()" class="mangas-selector" href="">mangás<div id="itensM" class="itensM-out"></div></button>
+                            <div class="mangas-out">
+                                <a href="">One piece</a>
+                                <a href="">JuJutus Kaisen</a>
+                                <a href="">Berserk</a>
+                                <a href="">Naruto</a>
+                            </div>
+                    </section>
+                    <section class="section-itens">
+                        <button onclick="clickJogos()" class="jogos-selector" href="">Jogos<div id="itensJ" class="itensJ-out"></div></button>
+                            <div class="jogos-out">
+                                <a href="">Ação</a>
+                                <a href="">Terror</a>
+                                <a href="">comédia</a>
+                                <a href="">Suspense</a>
+                            </div>
+                    </section>
+                    </section>
+                    <section class="assets-itens">
+                        <button onclick="clickAssets()" class="assets-selector" href="">Acessórios<div id="itensA" class="itensA-out"></div></button>
+                            <div class="assets-out">
+                                <a href="">Colares</a>
+                                <a href="">Brincos</a>
+                                <a href="">Relogios</a>
+                                <a href="">Anéis</a>
+                            </div>
+                    </section>
+                </main>
+            </div>
+                <div class="search-bar">
+                <input id="search-input" placeholder="Search" type="text">
+                <label for="search-lupa"><img class="lupa" src="https://s3-alpha-sig.figma.com/img/5f08/f575/3c6cfde2286017769f68ad6ad4e7b226?Expires=1694390400&Signature=m1QjnCBkwaIeRpB1YQV9qZy42g~nKWVvF~Lz5VUpbYhdJ5rRWXaH82P60ZYAKzZ6zdahrlFesDHAnFdGS5NURYONqqDGpWtjwVEUR5XL3wOKF-zXaEPtcoMn~HJvnnB6MfCwQJmUSscWIvKsuhlq2kAOJUxaIfQYwsv-ONYPrpnzfZnVPyOFkMplfMEz6UqV3HNPoQjCMmN24nas4yV8hQigghZ2m0YHEPK7ySaLPPgovfE2sTuZpSaqIwpAcdmuKKyOkam4SS~1Ot4UFgk37uyr1i1YQcm4bKkLt4-sygDauAUzL6lG1u~x3Joxo3tI0Xsku55L7VWhV3xxt4fGcA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" width="35" height="35"></label>
+            </div>
+            <div class="person-me"><a href=""><img src="https://s3-alpha-sig.figma.com/img/4679/b60a/14c9dd9625d28cb1b7c1664752e5e511?Expires=1694390400&Signature=f0N4rsOGpc7U3c3w~yVFookS5PV66nmgNL719vMhiCtPhOLaRGNxLo7SndBo1A48F2XJsNi94SBUTYCKq1kdFXxQ0KCMI0FcUkfbKhE1gEdvdslw5PBN1B5ugBHJcJ~EWefDSrHEOLwK--t89R~T5RpyNuT60pFs9wBZhjtXvO~TxsIZQVM73g-fXjVIzO8hDbiA69o~xjFiJmPFXwr2aI0cnjPXBxPC9PnVu0djJtWwwLhHMpVvI6gTeUiWPGSzf9jquBTEsPFN-uKYRP6tWGxA~32CVbvIHjNk-HcPgjgy4xYh7F3f5e94Lv8Pekz-Pg6XjsXwRx~JJYenTIXBNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" width="35" height="35"></a></div>
+        </header>
+
+        <nav class="nav-bar">
+            <section class="section-itens">
+                <a href="">roupas</a>
+            </section>
+            <section class="section-itens">
+                <a href="">mangás</a>
+            </section>
+            <section class="section-itens">
+                <a href="">jogos</a>
+            </section>
+            <section class="section-itens">
+                <a href="">acessórios</a>
+            </section>
+        </nav>
+
+
+
+        <footer>
+            <div class="content-footer">
+                <img src="https://s3-alpha-sig.figma.com/img/c6cb/ebda/e02346faa1da6b5f1ff36cb169b7f199?Expires=1694390400&Signature=pKGDOja4SDjmJ7-po6RY7GqQy7rXH7XAidCx0WEook6vWOAIf7Co~84ORQeDi5xs5xm99CW5aTrmW~ArzAei9NGmlroxELumX-awlWa53dEGY7BqyFlonwsWk7aa0JzxqUS1mbAk57dG6fevHAusV0Nyq~MWcf8v~PRFU2i8uTDihQIEpo7w8sXksQjKMhuKC8KcQbJKIiEBS-wOI8vlaznpCC83jZdnF1HP9pJyzW4cwjQlWDIYj5rb-v9oRadXKA8Tsq2hLOgjll2wYJF0M3YA1Id9rG2F-1GTgFqgHbAxqlhpJNeLAmsz7d7u6qtA-QdeitsIm2KbwIVafuj2rw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" width="20" height="20">
+                <a href="https://github.com/FelpsBZ">FelpsBZ</a> / <a href="https://github.com/gabriellimao7500">gabriellimao7500</a>
+            </div>
+        </footer>
+        
+
+
+        <div class="sun-none"></div>
+        <img class="city-none" src="https://s3-alpha-sig.figma.com/img/70a8/f3fe/0fad77083de4c4caf24dcb0e74bb7cdd?Expires=1694390400&Signature=YoAPfX9k2pAPGkA2Ll5jHsS9w9bd3U12Nok9y~sQBby4m3nUxhK--LVDp~r99WY4ba9mqwrmNGstP8Vte7YKpprNnjB0Uoxi7UICZ6duc7R4f62h2ux-4RmMaHsVQ4H7c-BfUZazWJj9UKx2Mazhg7mYaGoLNKL-XP3slswAEsaF0IXBmygn5B5kqU63v39DNofG08GcyZNyptbWU5mC0KSfuG8S7tzB5Idlk6gUT5Dwya5pINyTw6yDcNKO3a1czEjzzgqNmNqQIKem26x6uNVugIgL5cmYN7bFdtqNfDS953Rf-ErCeDlJ57xN26PuWL7UNunkuuQuwZR9f4XWzw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+        
+    </div>
+</body>
+</html>
