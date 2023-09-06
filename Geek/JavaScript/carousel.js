@@ -5,7 +5,7 @@ const items_roupas = document.querySelectorAll('.item-roupas');
 
 const maxItems_roupas = items_roupas.length 
 
-let currentItem_roupas = 0;
+let currentItem_roupas = 1;
 
 controls_roupas.forEach(control => {
   control.addEventListener('click', () => {

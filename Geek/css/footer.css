@@ -1,0 +1,25 @@
+/* Footer styles */
+footer {
+    width: 100vw;
+    height: 30px;
+    background: linear-gradient(90deg, #7C3AED 0%, #A855F7 50%, #BF46EF 100%);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.content-footer {
+    color: #F8FAFC;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+}

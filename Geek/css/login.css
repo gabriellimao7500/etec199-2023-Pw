@@ -1,0 +1,132 @@
+.github{
+    color: #F8FAFC;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+a{
+    color: #000000;
+    font-size: 13px;
+}a:hover{
+    font-size: 13px;
+}
+
+.background a{
+    margin-block: 6px;
+}
+
+.background{
+    background-image: linear-gradient(to right, #7C3AED, #A855F7, #BF46EF);
+    display: flex;
+    align-items: center;
+    transition: none;
+}
+
+.login-background{
+    transition: none;
+    background-color: #F8FAFC;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+}
+
+input{
+    margin-block: 5px;
+    border: none;
+}
+
+label button{
+    border: none;
+    color: #F8FAFC;
+    background: linear-gradient(to right, #7C3AED 0%, #A855F7 50%, #BF46EF 100%);
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 225px;
+    height: 45px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Create-accout{
+    color: #A855F7;
+    font-weight: 800;
+}
+
+.login,
+.passoword{
+    position: relative;
+    left: -40%;
+    cursor: default;
+}
+
+#login,
+#passoword{
+    height: 40px;
+    width: 400px;
+    border-bottom: 2px rgb(68, 68, 68) solid;
+}
+
+#CreateLogin,
+#CreatePassword{
+    height: 40px;
+    width: 400px;
+    border-bottom: 2px rgb(68, 68, 68) solid;
+}
+.person{
+    width: 15vw;
+    height: 15vw;
+}
+
+h1{
+    color: #F8FAFC;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.person-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 8%;
+}
+
+.home img{
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+}
+
+.home div{
+    color: #F8FAFC;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+

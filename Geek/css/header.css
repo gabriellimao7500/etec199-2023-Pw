@@ -1,0 +1,447 @@
+/* Header styles */
+.max-header {
+    width: 100vw;
+    height: 35px;
+    background: linear-gradient(90deg, #7C3AED 0%, #A855F7 50%, #BF46EF 100%);
+}
+
+header {
+    width: 88vw;
+    height: 92px;
+    padding-inline: 6vw;
+    background: linear-gradient(90deg, #7C3AED 0%, #A855F7 50%, #BF46EF 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Navigation bar styles */
+.nav-bar {
+    width: 100vw;
+    height: 42px;
+    background: #7C3AED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .section-itens {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main .section-itens {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Hamburger menu styles */
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburguer {
+    border: none;
+    background: none;
+    border-top: 6px solid #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    cursor: pointer; 
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    margin-top: 7px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.activated .hamburguer{
+    border-top: none;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.activated .hamburguer::before{
+    transform: rotate(135deg);
+    width: 34px;
+    transition: 0.2s ease-in-out;
+}.activated .hamburguer::after{
+    transform: rotate(-135deg);
+    width: 30px;
+    top: -12px;
+    transition: 0.2s ease-in-out;
+}
+
+.activated .hamburguer::after {
+    content: " ";
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    margin-top: 7px;
+}
+
+/*menu*/
+.hamburguer-out,
+.hamburguer-in {
+    background: #7C3AED;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    z-index: 0;
+}
+
+.hamburguer-out {
+    left: -30%;
+    border-radius: 50%;
+}
+
+.hamburguer-in {
+    left: 0;
+    opacity: 0.9;
+    border-radius: 0;
+}
+
+/*roupas*/
+.roupas-selector{
+    background: none;
+    border: none;
+    color:#F8FAFC;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+}.roupas-selector:hover{
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+.roupas-out{
+    display: none;
+    transition: 0.1s;
+}
+.roupas-in{
+    height: 150px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    transition: 0.5s;
+}
+.roupas-in,.roupas-out{
+    font-size: 12px;
+}
+.itensR-out{
+    rotate: -45deg;
+    transition: 0.2s linear;
+}
+.itensR-in{
+    rotate: 45deg;
+    transition: 0.2s linear;
+}
+
+/*mangás*/
+.mangas-selector{
+    background: none;
+    border: none;
+    color:#F8FAFC;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+}.mangas-selector:hover{
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+.mangas-out{
+    display: none;
+    transition: 0.1s;
+}
+.mangas-in{
+    height: 150px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    transition: 0.5s;
+}
+.mangas-in,.mangas-out{
+    font-size: 12px;
+}
+.itensM-out{
+    rotate: -45deg;
+    transition: 0.2s linear;
+}
+.itensM-in{
+    rotate: 45deg;
+    transition: 0.2s linear;
+}
+
+/*Jogos*/
+.jogos-selector{
+    background: none;
+    border: none;
+    color:#F8FAFC;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+}.jogos-selector:hover{
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+.jogos-out{
+    display: none;
+    transition: 0.1s;
+}
+.jogos-in{
+    height: 150px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    transition: 0.5s;
+}
+.jogos-in,.jogos-out{
+    font-size: 12px;
+}
+.itensJ-out{
+    rotate: -45deg;
+    transition: 0.2s linear;
+}
+.itensJ-in{
+    rotate: 45deg;
+    transition: 0.2s linear;
+}
+
+/*Assets*/
+.assets-selector{
+    background: none;
+    border: none;
+    color:#F8FAFC;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+}.assets-selector:hover{
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+.assets-out{
+    display: none;
+    transition: 0.1s;
+}
+.assets-in{
+    height: 150px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    transition: 0.5s;
+}
+.assets-in,.assets-out{
+    font-size: 12px;
+}
+.itensA-out{
+    rotate: -45deg;
+    transition: 0.2s linear;
+}
+.itensA-in{
+    rotate: 45deg;
+    transition: 0.2s linear;
+}
+
+/*seta*/
+button div{
+    width: 10px;
+    height: 10px;
+    border: solid white 5px;
+    border-left: rgba(0, 0, 0, 0); 
+    border-top: rgba(0, 0, 0, 0);
+    rotate: -45deg;
+    margin-left: 15px;
+}
+
+/* Search bar styles */
+.search-bar {
+    width: 416px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar input {
+    height: 100%;
+    width: 376px;
+    margin-right: 25px;
+    border: none;
+    border-radius: 9px;
+    padding-left: 25px;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.lupa{
+    cursor: pointer;
+}
+
+
+
+/*theme*/
+.theme-alternateS{
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(#FF9900,#DBFF00);
+    border: #FF7A00 solid 8px;
+    box-shadow: 0px 0px 10px 2px #FFC700;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.theme-alternateM{
+    width: 50px;
+    height: 50px;
+    border: white solid 2px;
+    background-image: linear-gradient(#B2B2B2,#323232);
+    box-shadow: 0px 0px 10px 2px white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.black{
+    background-color: #312D37;
+}
+.blacks{
+    background-color: #312D37;
+    border-color: black;
+}
+
+.city-none{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 0;
+}
+.sun-none{
+    width: 10vw;
+    height: 10vw;
+    position: fixed;
+    bottom: -500px;
+    background-image: linear-gradient(#FF9900,#DBFF00);
+    border: #FF7A00 solid 8px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 100px 45px #FFC700;
+    z-index: 2;
+    left: 50%;
+}
+.sun{
+    animation: sun 4s ease 1;
+}
+.mon{
+    position: fixed;
+    bottom: -500px;
+    border: white solid 2px;
+    background-image: linear-gradient(#B2B2B2,#323232);
+    box-shadow: 0px 0px 50px 1px white;
+    animation: mon 4s ease 1;
+    left: 50%;
+    
+}
+
+.city-on{
+    animation: city 4s ease-in-out 1;
+}
+
+@keyframes city {
+    0%{
+        height: 0;
+    }
+    20%{
+        height: 100vh;
+    }
+    80%{
+        height: 100vh;
+    }
+    100%{
+        height: 0;
+    }
+}
+
+@keyframes mon {
+    0%{
+        left: 45vw;
+        bottom: -500px;
+    }
+    50%{
+        left: 45vw;
+        bottom: 500px;
+    }
+    70%{
+        left: 45vw;
+        bottom: 500px;
+    }
+    30%{
+        left: 45vw;
+        bottom: -500px;
+    }
+}
+
+@keyframes sun {
+    0%{
+        left: 45vw;
+        bottom: -500px;
+    }
+    50%{
+        left: 45vw;
+        bottom: 500px;
+    }
+    70%{
+        left: 45vw;
+        bottom: 500px;
+    }
+    30%{
+        left: 45vw;
+        bottom: -500px;
+    }
+}
