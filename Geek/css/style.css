@@ -6,6 +6,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 /* Global styles */
 a {
     text-decoration: none;
@@ -16,17 +17,17 @@ a {
     transition: 0.1s linear;
 }
 
-.body {
+body {
     overflow-x: hidden;
     width: 100vw;
-    height: 200vh;
+    height: 300vh;
     background-color: white;
     transition: 1s ease-out;
 }
 
 .background{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #ffffff;
     transition: 3.5s ease-out;
 }
@@ -95,11 +96,7 @@ main .section-itens {
     background: none;
     border-top: 6px solid #fff;
     z-index: 1;
-    transition: 0.3s ease-in-out;
     cursor: pointer;
-    position: fixed;
-    top: 64px;
-    left: 100px;
 }
 
 .hamburguer::before,
@@ -452,6 +449,7 @@ footer {
     box-shadow: 0px 0px 50px 1px white;
     animation: mon 4s ease 1;
     left: 50%;
+    
 }
 
 .city-on{

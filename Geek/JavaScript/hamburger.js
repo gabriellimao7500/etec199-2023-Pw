@@ -71,8 +71,3 @@ function clickAssets() {
     itensA.classList.toggle("itensA-in")
     assets_in.classList.toggle("assets-in")
 }
-
-
-
-
-
