@@ -1,3 +1,7 @@
+.none{
+    display: none;
+}
+
 /* Header styles */
 .max-header {
     width: 100vw;
@@ -298,6 +302,83 @@ button div{
     rotate: -45deg;
     margin-left: 15px;
 }
+
+/*Person menu styles*/
+
+.num-buy{
+    font-size: 40px;
+}
+
+.buy-num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-on{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+}
+
+.person-me{
+    z-index: 1;
+    cursor: pointer;
+}
+
+.person-menu{
+    background: #7C3AED;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    color: #F8FAFC;
+}
+
+.login{
+    border: none;
+    color: #F8FAFC;
+    background-color: #BF46EF;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nome{
+    width: 25%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Username{
+    margin-left: 5px;
+}
+
+.menu-activated{
+    right: 0;
+    opacity: 0.9;
+    border-radius: 0;
+}
+.menu-unactivated{
+    right: -26%;
+    border-radius: 50%;
+}
+
 
 /* Search bar styles */
 .search-bar {

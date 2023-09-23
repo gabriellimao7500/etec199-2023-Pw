@@ -68,6 +68,7 @@
     border-radius: 15px;
 }
 
+
 /*games*/
 
 
@@ -129,24 +130,6 @@
     width: 250px;
     height: 250px;
     background-color: #ffffff;
-}
-
-/* Style the product image */
-.img-produto {
-    width: 250px;
-    height: 200px;
-    background: url("https://http2.mlstatic.com/D_NQ_NP_625423-MLA47920375564_102021-O.webp");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: 0.3s ease-out;
-}
-
-/* Hover effect for the product image */
-.img-produto:hover {
-    background: url("https://http2.mlstatic.com/D_NQ_NP_820504-MLA47920420472_102021-O.webp");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: 0.3s ease-out;
 }
 
 /* Style the price container */

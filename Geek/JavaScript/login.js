@@ -1,16 +1,32 @@
 var createLogin;
 var createPassword;
 
+const username = document.querySelector('.Username')
+username.innerHTML = localStorage.getItem('usuário')
+
 function Register() {
+    var user = document.getElementById('CreateLogin').value
+    var passoword = document.getElementById('CreatePassword').value
+
+    localStorage.setItem("usuário",user)
+    localStorage.setItem("password",passoword)
     
+
+    alert("sucesso")
+    location.href = "login.html"
+
 }
 
 function Login(){
-    var password = document.getElementById('passoword').value
-    var Login = document.getElementById('login').value
-    
+    var createdUser = localStorage.getItem("usuário")
+    var createdPassword = localStorage.getItem("password")
 
-    if(Login == "gabriel" && password == "123"){
+    const password = document.getElementById('passoword').value
+    const Login = document.getElementById('login').value
+
+    console.log(createdPassword,password)
+    
+    if(Login == createdUser && password == createdPassword){
         alert("sucesso")
         location.href = "index.html"
     }else{

@@ -78,13 +78,16 @@ label button{
 
 #login,
 #passoword{
+    padding-left: 15px;
     height: 40px;
     width: 400px;
     border-bottom: 2px rgb(68, 68, 68) solid;
+    
 }
 
 #CreateLogin,
 #CreatePassword{
+    padding-left: 15px;
     height: 40px;
     width: 400px;
     border-bottom: 2px rgb(68, 68, 68) solid;
