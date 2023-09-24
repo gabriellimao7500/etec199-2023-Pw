@@ -28,7 +28,7 @@ function Login(){
         alert("sucesso")
         location.href = "index.html"
     }else{
-        alert("usuário incorreto, tente novamente.")
+        alert("usuário ou senha incorreto, tente novamente.")
     }
 
 }
