@@ -106,6 +106,15 @@ main .section-itens {
 }
 
 /*menu*/
+
+.home{
+    display: flex;
+    align-items: center;
+}
+.home img{
+    margin-right: 8px;
+}
+
 .hamburguer-out,
 .hamburguer-in {
     background: #7C3AED;

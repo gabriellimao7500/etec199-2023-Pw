@@ -94,6 +94,62 @@
     overflow: hidden;
 }
 
+
+/*mangas*/
+
+
+.mangas-wrapper{
+    overflow-x: auto;
+    width: 90vw;
+}
+.mangas-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.mangas-gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.item-mangas{
+    width: 250px;
+    height: 360px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    overflow: hidden;
+}
+
+/*all*/
+
+.offcar{
+    position: fixed;
+    top: -100vh;
+}
+
+
+.all-wrapper{
+    overflow-x: auto;
+    width: 95vw;
+    margin: 2.5vw;
+}
+.all-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.all-gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.item-all{
+    width: 250px;
+    height: 360px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    overflow: hidden;
+}
 /*items styles*/
 
 /* Style the product container */
@@ -150,4 +206,11 @@
 .info {
     margin-top: 10px;
     font-size: 16px;
+}
+
+
+@media (max-width: 650px) {
+    .arrow-right,.arrow-left{
+        display: none;
+    }
 }

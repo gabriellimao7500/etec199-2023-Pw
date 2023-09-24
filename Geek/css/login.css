@@ -133,3 +133,12 @@ h1{
     cursor: pointer;
 }
 
+@media (max-width: 650px) {
+    input{
+        max-width: 200px;
+    }
+    .home div {
+        display: none;
+    }
+    
+  }
