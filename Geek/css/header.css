@@ -335,6 +335,11 @@ button div{
         max-width: 100px;
     }
     .sun{
+        min-height: 100px;
+        min-width: 100px;
+    }
+    .mon{
+        min-height: 100px;
         min-width: 100px;
     }
     .search-bar input{

@@ -1,0 +1,86 @@
+.main-compra {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+     width: 100vw;    
+}
+
+.imagem-principal {
+
+    margin-left: 3vw;
+    width: 30vw;
+
+}
+
+.imagem_itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 10vw;
+
+}
+
+#item1 img > #item2  img > #item3 img > #item4 img > #item5 img > #item6 img {
+
+    border-radius: 15%;
+    border-color: 2px black;
+    width: 70;
+    height: 70;
+
+}
+
+p {
+    font-size: 30px;
+}
+.preco {
+    font-size: 40px;
+}
+
+.descricao {
+
+    margin-left: 30px;
+    width: 30vw;
+}
+
+.compra {
+
+    margin-left: 20px;
+    width: 30vw;
+    border: 2px black;
+
+}
+
+.title {
+    font-weight: bold;
+    color: #0797FF;
+    font-size: 25px;
+}
+
+
+.info {
+    font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+
+    margin-block: 10px;
+
+}
+
+.buy{
+    width: 18vw;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #0797FF;
+    box-shadow: 0px 0px 15px 5px #70c3ff;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.buy a{
+    text-shadow: 1px 1px 6px whitesmoke;
+}
