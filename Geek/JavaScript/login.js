@@ -23,8 +23,6 @@ function Login(){
 
     const password = document.getElementById('passoword').value
     const Login = document.getElementById('login').value
-
-    console.log(createdPassword,password)
     
     if(Login == createdUser && password == createdPassword){
         alert("sucesso")

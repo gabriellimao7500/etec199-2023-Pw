@@ -23,12 +23,6 @@ if(createdUser != user){
     localStorage.setItem("user",user)
 }
 
-
-
-
-
-console.log(user,createdUser)
-
 const Numbuy = document.querySelector('.num-buy')
 Numbuy.innerHTML = localStorage.getItem('buynum')
 

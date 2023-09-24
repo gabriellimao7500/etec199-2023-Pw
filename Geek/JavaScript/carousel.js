@@ -5,15 +5,15 @@ const items_roupas = document.querySelectorAll('.item-roupas');
 
 const maxItems_roupas = items_roupas.length 
 
-let currentItem_roupas = 1;
+let currentItem_roupas = 4;
 
 controls_roupas.forEach(control => {
   control.addEventListener('click', () => {
     const isLeftR = control.classList.contains('arrow-left');
     if(isLeftR){
-      currentItem_roupas -= 3;
+      currentItem_roupas -= 4;
     }else{
-      currentItem_roupas += 3;
+      currentItem_roupas += 4;
     }
 
     if(currentItem_roupas >= maxItems_roupas){

@@ -46,7 +46,7 @@
 /*roupas*/
 
 .roupas-wrapper{
-    overflow-x: hidden;
+    overflow-x: auto;
     width: 90vw;
 }
 .roupas-wrapper::-webkit-scrollbar{
@@ -73,7 +73,7 @@
 
 
 .games-wrapper{
-    overflow-x: hidden;
+    overflow-x: auto;
     width: 90vw;
 }
 .games-wrapper::-webkit-scrollbar{
