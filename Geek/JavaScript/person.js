@@ -3,9 +3,31 @@ const personButton = document.querySelector('.person-me')
 const person_off = document.querySelector('.person-off')
 const person_on = document.querySelector('.person-on')
 
+var createdUser = localStorage.getItem("usuário")
+
 
 var buyNum = localStorage.getItem('buynum')
-localStorage.setItem("buynum",buyNum)
+
+if(isNaN(buyNum) || buyNum == null || buyNum == 0){
+    localStorage.setItem("buynum",0)
+    var buyNum = localStorage.getItem('buynum')
+}
+
+var user = localStorage.getItem("user")
+
+
+if(createdUser != user){
+    localStorage.setItem("buynum",0)
+    buyNum = localStorage.getItem('buynum')
+    user = createdUser
+    localStorage.setItem("user",user)
+}
+
+
+
+
+
+console.log(user,createdUser)
 
 const Numbuy = document.querySelector('.num-buy')
 Numbuy.innerHTML = localStorage.getItem('buynum')

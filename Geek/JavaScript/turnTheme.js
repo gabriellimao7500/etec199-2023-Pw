@@ -5,9 +5,13 @@ const button_theme = document.querySelector(".theme-alternateS")
 
 var theme = "white"
 
+
+
+
 function turn_theme(){
     if (theme == "white"){
         theme = "dark"
+        localStorage.setItem("theme","dark")
         background.classList.toggle("darkmode")
         sun.classList.toggle("mon")
         city.classList.toggle("city-on")
@@ -18,6 +22,7 @@ function turn_theme(){
         },4000)
     }else{
         theme = "white"
+        localStorage.setItem("theme","white")
         background.classList.toggle("darkmode")
         sun.classList.toggle("sun")
         city.classList.toggle("city-on")

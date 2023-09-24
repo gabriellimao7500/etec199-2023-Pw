@@ -41,3 +41,7 @@ body {
     transition: 3.5s ease-out;
 }
 
+.darkmodet{
+    background-color: black;
+    transition: none;
+}
