@@ -11,7 +11,19 @@
     font-family: inter;
 }
 
+body::-webkit-scrollbar {
+  width: 14px;               /* width of the entire scrollbar */
+}
 
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7C3AED;    /* color of the scroll thumb */
+  border-radius: 20px; 
+  border: 3px solid #ffffff;      /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+}
 /* Global styles */
 a {
     text-decoration: none;
